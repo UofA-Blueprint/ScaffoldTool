@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import HomePage from './components/HomePage';
-import FirebasePage from './components/FirebasePage';
+import HomePage from './pages/HomePage';
+import FirebasePage from './pages/FirebasePage';
 
 function App() {
   return (
