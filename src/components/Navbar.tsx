@@ -1,7 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+interface NavbarProps {
+  links: string[];
+  titles: string[];
+}
+
+const Navbar: React.FC<NavbarProps> = ({ links, titles }) => {
   return (
     <nav className="flex items-center justify-between flex-wrap bg-primary-main p-6 fixed w-screen">
       <div className="flex items-center text-white mr-6">
@@ -9,10 +14,10 @@ const Navbar = () => {
       </div>
       <div className="w-full text-sm block lg:flex lg:items-center lg:w-auto">
         <Link
-          to="/"
+          to={links[0]}
           className="block mt-4 lg:inline-block lg:mt-0 text-primary-light hover:text-white mr-4"
         >
-          Home
+          {titles[0]}
         </Link>
         <Link
           to="/firebase-connection"
