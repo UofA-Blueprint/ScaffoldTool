@@ -7,7 +7,7 @@ import FirebasePage from './components/FirebasePage';
 function App() {
   return (
     <Router>
-      <Navbar />
+      <Navbar links={['/']} titles={['Home']} />
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/firebase-connection" element={<FirebasePage />}></Route>
