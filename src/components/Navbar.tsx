@@ -12,16 +12,16 @@ const Navbar: React.FC<NavbarProps> = ({ links, titles }) => {
       <div className="flex items-center text-white mr-6">
         <span className="font-semibold text-xl">Scaffold Tool</span>
       </div>
-      <div className="w-full text-sm block lg:flex lg:items-center lg:w-auto">
+      <div className="w-full text-sm block sm:flex sm:items-center sm:w-auto">
         <Link
-          to={links[0]}
-          className="block mt-4 lg:inline-block lg:mt-0 text-primary-light hover:text-white mr-4"
+          to="/"
+          className="block mt-4 sm:inline-block sm:mt-0 text-primary-light hover:text-white mr-4"
         >
           {titles[0]}
         </Link>
         <Link
           to="/firebase-connection"
-          className="block mt-4 lg:inline-block lg:mt-0 text-primary-light hover:text-white mr-4"
+          className="block mt-4 sm:inline-block sm:mt-0 text-primary-light hover:text-white mr-4"
         >
           Firebase
         </Link>
